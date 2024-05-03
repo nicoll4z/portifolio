@@ -31,12 +31,6 @@ body{
     display: inline-block;
 }
 
-.botaoCont button:hover{
-    color: #9d1220f8;
-    text-decoration: none;
-    transform: scale(1.05);
-}
-
 h2.title{
     color: aliceblue;
     font-size: 34px;
@@ -46,6 +40,15 @@ h2.title{
 h2.title span{
     color:  #9d1220f8;;
 }
+
+
+button:hover{
+    color: #9d1220f8;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 
 /* Estilo Cabeçalho*/
 
@@ -179,4 +182,56 @@ section.especialidades .flex{
 .especialidades .especialidadesBox h3{
     font-size: 27px;
     margin: 3% 0;
+}
+
+section.sobre{
+    padding: 5% 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 6%;
+}
+
+.imgSobre img{
+    width: 400px;
+    height: 500px;
+    margin: 0;
+    border-radius: 2%;
+}
+
+.sobre .txt-sobre{
+    color:aliceblue;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 5%;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #9d1220cb;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 4% 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btnSocial button{
+    all: unset;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: rgba(240, 248, 255, 0.562);
+    cursor: pointer;
+    font-size: 40px;       
+}
+
+.sobre .txt-sobre .btnSocial button:hover{
+    color: #9d1220f8;
+    transform: scale(1.05);
+    transition: 0.2ms;
 }
