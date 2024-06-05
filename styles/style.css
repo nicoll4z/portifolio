@@ -5,11 +5,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-:root{
-    --border: 2px solid #ffffff8c;
-}
-
-
 body{
     background-color: black;
     height: 100vh;
@@ -50,15 +45,23 @@ button:hover{
     transition: 0.3s;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 /* Estilo Cabeçalho*/
 
 header{
-    padding: 1.5% 4%;
-    background-color: #4e121859;
-    border: var(--border);
-    border-inline: none;
+    padding: 0% 4%;
+    background-color: #5b0e16;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+    border-bottom: 1px solid #ffffff8c;
 }
+
 
 header > .interface {
     display: flex;
@@ -66,8 +69,9 @@ header > .interface {
     justify-content: space-between;
 }
 
+
 header a{
-    color: rgba(240, 248, 255, 0.562);
+    color: rgb(205, 184, 184);
     text-decoration: none;
     transition: .2s;
 }
@@ -86,12 +90,13 @@ header nav ul{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 35%;
+    gap: 45%;
+    
 }
 
 header .logo img{
-    width: 100px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     margin: 0;
     padding: 0 0;
 }
@@ -99,33 +104,40 @@ header .logo img{
 
 /* Estilo topo */
 
-section.topoSite{
-    padding: 40px 4%;
+#topoSite{
+    background-color: black;
+    padding: 50px 4%;
+    position: relative;
+    margin-top: 90px;
 }
 
-section.topoSite .flex{
+#topoSite .flex{
     align-items: center;
     justify-content: center;
-    gap: 15%;
+    gap: 10%;
 }
 
-.topoSite h1 {
+#topoSite h1 {
     color: aliceblue;
     font-size: 42px;
     line-height: 40px;
-
+    margin-bottom: 70px;
 }
 
-.topoSite .textTopoSite h1 span{
+#topoSite .textTopoSite h1 span{
     color: #9d1220f8;
 }
 
-.topoSite .textTopoSite p {
-    color: #fff;
+#topoSite .textTopoSite p{
+    color: aliceblue;
     margin: 6% 0;
+    font-weight: 500;
+    text-align: justify;
 }
 
-.topoSite .imgTopoSite img{
+
+
+#topoSite .imgTopoSite img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     width: 500px;
@@ -133,7 +145,7 @@ section.topoSite .flex{
     margin: 0;
 }
 
-.topoSite .botaoCont{
+#topoSite .botaoCont{
     margin-top: 6%;
 }
 
@@ -149,45 +161,53 @@ section.topoSite .flex{
 
 /*Estilo especialidades*/
 
-section.especialidades{
-    padding: 7% 0;
+#especialidades{
+    padding: 9% 0;
     margin: 1% 0;
+  
 }
 
-section.especialidades .flex{
+#especialidades .flex{
+    display: flex;
     gap: 80px;
-
+    justify-content: space-around;
 }
 
-.especialidades .especialidadesBox{
+#especialidades .especialidadesBox{
     color: aliceblue;
-    padding: 30px;
+    padding: 25px;
     border-radius: 20px;
     margin-top: 80px;
     transition: .2s;
     text-align: justify;
+    justify-content: space-around;
+    justify-content: space-between; /* Para distribuir o conteúdo interno */
+    flex: 1; /* Para que todos os itens tenham a mesma altura */
 }
 
-.especialidades .especialidadesBox:hover{
+#especialidades .especialidadesBox:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 2px 1px #9d1220f8; 
 }
 
-.especialidades .especialidadesBox i{
-    font-size: 63px;
+#especialidades .especialidadesBox i{
+    font-size: 55px;
     color: #9d1220f8;
 }
 
-.especialidades .especialidadesBox h3{
+#especialidades .especialidadesBox h3{
     font-size: 27px;
     margin: 20px 0;
+    
 }
 
-section.sobre{
-    padding: 4% 4%;
+/* Estilo sobre */
+
+#sobre{
+    padding: 7% 4%;
 }
 
-section.sobre .flex{
+#sobre .flex{
     align-items: center;
     gap: 60px;
     
@@ -200,27 +220,27 @@ section.sobre .flex{
     border-radius: 2%;
 }
 
-.sobre .txt-sobre{
+#sobre .txt-sobre{
     color:aliceblue;
 }
 
-.sobre .txt-sobre h2{
+#sobre .txt-sobre h2{
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 50px;
 }
 
-.sobre .txt-sobre h2 span{
+#sobre .txt-sobre h2 span{
     color: #9d1220cb;
     display: block;
 }
 
-.sobre .txt-sobre p{
+#sobre .txt-sobre p{
     margin: 40px 0;
     text-align: justify;
 }
 
-.sobre .txt-sobre .btnSocial button{
+#sobre .txt-sobre .btnSocial button{
     all: unset;
     width: 60px;
     height: 60px;
@@ -230,8 +250,53 @@ section.sobre .flex{
     font-size: 40px;       
 }
 
-.sobre .txt-sobre .btnSocial button:hover{
+#sobre .txt-sobre .btnSocial button:hover{
     color: #9d1220f8;
     transform: scale(1.05);
     transition: 0.2ms;
+}
+
+/* Estilo numeros */
+
+#numeros{
+    padding: 7% 0;
+}
+
+#numeros .flex{
+    display: flex;
+    gap: 80px;
+    justify-content: space-around;
+}
+
+#numeros .textNumeros{
+    color:aliceblue;
+}
+
+#numeros h2{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+#numeros h2 span{
+    color: #9d1220cb;
+}
+
+#numeros .textNumeros p{
+    margin: 60px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+#numeros .textNumeros .ListaNumeros li{
+    margin-bottom: 20px;
+    font-size: 15px;  
+    font-weight: 800;
+}
+
+.ListaNumeros li span{
+    color: #9d1220cb;
+    font-weight: 700;
 }
