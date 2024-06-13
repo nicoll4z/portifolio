@@ -22,7 +22,7 @@ body{
 .botaoCont button{
     all: unset;
     text-decoration: none;
-    font-weight: 850;
+    font-weight: 950;
     color: rgba(240, 248, 255, 0.562);
     display: inline-block;
 }
@@ -51,15 +51,15 @@ html{
 /* Estilo Cabeçalho*/
 
 header{
-    padding: 0% 4%;
-    background-color: #5b0e16;
+    padding: 0.5%;
+    background-color: rgba(43, 38, 38, 0.356);
     position: fixed;
     top: 0; 
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 100px;
     z-index: 100;
-    border-bottom: 1px solid #ffffff8c;
+    transition: .2s;
 }
 
 
@@ -71,13 +71,14 @@ header > .interface {
 
 
 header a{
-    color: rgb(205, 184, 184);
+    color: #9d1220f8;
+    font-weight: 700;
     text-decoration: none;
     transition: .2s;
 }
 
 header a:hover{
-    color: #9d1220f8;
+    color: rgb(205, 184, 184);
 }
 
 header a img:hover{
@@ -101,6 +102,33 @@ header .logo img{
     padding: 0 0;
 }
 
+header.rolagem{
+    padding: 0% 4%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+    border-bottom: 1px solid #ffffff8c;
+    background-color: #5b0e16;
+    transition: .4s;
+}
+
+header.rolagem a{
+    color: rgb(205, 184, 184);
+    text-decoration: none;
+    transition: .2s;
+}
+
+header.rolagem a:hover{
+    color: #9d1220f8;
+}
+
+header.rolagem a img:hover{
+    color:rgb(205, 184, 184);
+    transform: scale(1.05);
+}
 
 /* Estilo topo */
 
@@ -108,7 +136,7 @@ header .logo img{
     background-color: black;
     padding: 50px 4%;
     position: relative;
-    margin-top: 90px;
+    margin-top: 190px;
 }
 
 #topoSite .flex{
@@ -159,11 +187,11 @@ header .logo img{
     }
 }
 
-/*Estilo especialidades*/
+/*Estilo conquistas*/
 
 #especialidades{
     padding: 9% 0;
-    margin: 1% 0;
+    margin: 2% 0;
   
 }
 
@@ -299,4 +327,43 @@ header .logo img{
 .ListaNumeros li span{
     color: #9d1220cb;
     font-weight: 700;
+}
+
+/* Estilo rodapé */
+
+#rodape {  
+    width: 100%;
+    padding: 1% 0%;
+    background-color: #5b0e16;
+    border-top: 1px solid #ffffff8c;
+    z-index: 100;
+}
+
+#rodapeContent {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1%;
+}
+
+#rodapeSocial {
+    margin-bottom: 1%;
+}
+
+#rodape .text p{
+    margin-right: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    margin-top: 4%;
+}
+
+#rodape .btnRodape{
+    display: flex;
+    gap: 10px;
+}
+
+#rodape .btnRodape button{
+    all: unset;
+    color: aliceblue;
+    background-color: #5b0e16;
+    font-size: 30px;
 }
