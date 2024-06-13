@@ -341,29 +341,86 @@ header.rolagem a img:hover{
 
 #rodapeContent {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 1%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1% 4%;
 }
 
-#rodapeSocial {
-    margin-bottom: 1%;
-}
 
-#rodape .text p{
-    margin-right: 10px;
+#rodapeSocial p{
     color: aliceblue;
     font-weight: 600;
-    margin-top: 4%;
 }
 
-#rodape .btnRodape{
+#rodapeInput{
+    display: flex;
+    color: aliceblue;
+    font-weight: 500;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#inputGroup{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+#inputGroup input{
+    all: unset;
+    padding: 1%;
+    width: 100%;
+}
+
+#inputGroup button{
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    padding: 0% 4%;
+    height: 100%;
+    font-size: 15px;
+    border-radius: 0px 2px 2px 0px;
+    cursor: pointer;
+    
+}
+
+#rodapeSocial .rodapeBtn{
     display: flex;
     gap: 10px;
+    padding: 2% 0%;
 }
 
-#rodape .btnRodape button{
+#rodapeSocial .rodapeBtn button{
     all: unset;
     color: aliceblue;
     background-color: #5b0e16;
     font-size: 30px;
+}
+
+#rodapeCopyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 100;
+    width: 100%;
+    padding: 3px;
+    font-size: small;
+}
+    
+
+@media screen and (max-width: 768px){
+    #rodapeContent{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%
+    }
+}
+
+
+@media screen and (max-width: 426px){
+    #rodapeContent{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1%
+    }
 }
