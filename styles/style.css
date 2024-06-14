@@ -440,9 +440,6 @@ header.rolagem a img:hover{
 
 
 @media screen and (max-width: 426px){
-    #topoSite .flex{
-        padding: 10%;
-    }
 
     #topoSite .imgTopoSite img{
         width: 370px;
@@ -464,7 +461,7 @@ header.rolagem a img:hover{
     }
 
     #sobre .flex{
-        padding: 10%;
+        padding: 5%;
     }
 
     #sobre .imgSobre img{
@@ -481,7 +478,7 @@ header.rolagem a img:hover{
 
     #rodapeContent{
         grid-template-columns: repeat(1, 1fr);
-        padding: 10%
+        padding: 5%
     }
 
 }
