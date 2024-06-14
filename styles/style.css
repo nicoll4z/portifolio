@@ -300,18 +300,6 @@ header.rolagem a img:hover{
     color:aliceblue;
 }
 
-#numeros h2{
-    margin-top: 40px;
-    text-align: center;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 50px;
-}
-
-#numeros h2 span{
-    color: #9d1220cb;
-}
-
 #numeros .textNumeros p{
     margin: 60px;
     text-align: justify;
@@ -331,18 +319,13 @@ header.rolagem a img:hover{
 
 /* Estilo rodapé */
 
-#rodape {  
+#rodapeContent {
     width: 100%;
-    padding: 1% 0%;
     background-color: #5b0e16;
     border-top: 1px solid #ffffff8c;
-    z-index: 100;
-}
-
-#rodapeContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1% 4%;
+    padding: 2% 6%;
 }
 
 
@@ -356,6 +339,7 @@ header.rolagem a img:hover{
     color: aliceblue;
     font-weight: 500;
     gap: 10px;
+    text-align: justify;
     flex-direction: column;
 }
 
@@ -364,6 +348,7 @@ header.rolagem a img:hover{
     align-items: center;
     background-color: aliceblue;
     border-radius: 2px;
+    
 }
 
 #inputGroup input{
@@ -387,7 +372,8 @@ header.rolagem a img:hover{
 #rodapeSocial .rodapeBtn{
     display: flex;
     gap: 10px;
-    padding: 2% 0%;
+    padding: 4% 0%;
+    justify-content:baseline;
 }
 
 #rodapeSocial .rodapeBtn button{
@@ -411,16 +397,91 @@ header.rolagem a img:hover{
     
 
 @media screen and (max-width: 768px){
+
+    #topoSite {
+        margin-top: 100px;
+    }
+
+    #topoSite .flex{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    h2.title{
+        margin-top: 5%;
+    }
+
+    #especialidades .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    #sobre .flex{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    #numeros .flex{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    #numeros .textNumeros .ListaNumeros{
+        padding: 0% 13%;
+    }
+
     #rodapeContent{
-        grid-template-columns: repeat(2, 1fr);
         gap: 10%
     }
 }
 
 
 @media screen and (max-width: 426px){
+    #topoSite .flex{
+        padding: 10%;
+    }
+
+    #topoSite .imgTopoSite img{
+        width: 370px;
+        height: 340px;
+    }
+
+    #especialidades .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    h2.title{
+        padding: 5%;
+        text-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    #sobre .flex{
+        padding: 10%;
+    }
+
+    #sobre .imgSobre img{
+        width: 300px;
+        height: 400px;
+        margin: 0;
+        border-radius: 2%;
+    }
+
+    #numeros .textNumeros p{
+        padding: 0%;
+        margin: 10%;
+    }
+
     #rodapeContent{
         grid-template-columns: repeat(1, 1fr);
-        padding: 1%
+        padding: 10%
     }
+
 }
