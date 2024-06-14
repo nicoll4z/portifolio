@@ -460,10 +460,6 @@ header.rolagem a img:hover{
         margin-top: 5%;
     }
 
-    #sobre .flex{
-        padding: 5%;
-    }
-
     #sobre .imgSobre img{
         width: 300px;
         height: 400px;
@@ -472,8 +468,12 @@ header.rolagem a img:hover{
     }
 
     #numeros .textNumeros p{
-        padding: 0%;
-        margin: 10%;
+        padding: 5%;
+        margin: 1%;
+    }
+
+    #numeros .textNumeros .ListaNumeros{
+       margin-top: 5%;
     }
 
     #rodapeContent{
