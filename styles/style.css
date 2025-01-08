@@ -398,6 +398,20 @@ header.rolagem a img:hover{
 
 @media screen and (max-width: 768px){
 
+    header nav{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        height: 80px;
+    }
+
+    header .botaoCont{
+        display: none;
+    }
+
     #topoSite {
         margin-top: 100px;
     }
