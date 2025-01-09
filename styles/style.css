@@ -518,12 +518,6 @@ header.rolagem a img:hover{
         flex-direction: column;
     }
 
-    header .mobile{
-        flex-direction: row;
-        padding:2%;
-        z-index: 100;
-    }
-
     #topoSite .imgTopoSite img{
         width: 370px;
         height: 340px;
