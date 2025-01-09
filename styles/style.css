@@ -22,7 +22,7 @@ body{
 .botaoCont button{
     all: unset;
     text-decoration: none;
-    font-weight: 850;
+    font-weight: 950;
     color: rgba(240, 248, 255, 0.562);
     display: inline-block;
 }
@@ -50,16 +50,24 @@ html{
 }
 /* Estilo Cabeçalho*/
 
+.mobile{
+    display: none;
+}
+
+#hamburger{
+    display: none;
+}
+
 header{
-    padding: 0% 4%;
-    background-color: #5b0e16;
+    padding: 0.5%;
+    background-color: rgba(43, 38, 38, 0.356);
     position: fixed;
     top: 0; 
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 100px;
     z-index: 100;
-    border-bottom: 1px solid #ffffff8c;
+    transition: .2s;
 }
 
 
@@ -71,13 +79,14 @@ header > .interface {
 
 
 header a{
-    color: rgb(205, 184, 184);
+    color: #9d1220f8;
+    font-weight: 700;
     text-decoration: none;
     transition: .2s;
 }
 
 header a:hover{
-    color: #9d1220f8;
+    color: rgb(205, 184, 184);
 }
 
 header a img:hover{
@@ -101,6 +110,48 @@ header .logo img{
     padding: 0 0;
 }
 
+header.rolagem{
+    padding: 0% 4%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+    border-bottom: 1px solid #ffffff8c;
+    background-color: #5b0e16;
+    transition: .4s;
+}
+
+header.rolagem a{
+    color: rgb(205, 184, 184);
+    text-decoration: none;
+    transition: .2s;
+}
+
+#hamburger.rolagem {
+    top: 75px;
+    border-left: 1px solid #ffffff8c;
+    transition: .4s;
+    background:#5b0e16;
+}
+
+#hamburger.rolagem #myLinksMob a{
+    color: black;
+}
+
+#hamburger.rolagem #myLinksMob a:hover{
+    color: rgb(205, 184, 184);
+}
+
+header.rolagem a:hover{
+    color: #9d1220f8;
+}
+
+header.rolagem a img:hover{
+    color:rgb(205, 184, 184);
+    transform: scale(1.05);
+}
 
 /* Estilo topo */
 
@@ -108,7 +159,7 @@ header .logo img{
     background-color: black;
     padding: 50px 4%;
     position: relative;
-    margin-top: 90px;
+    margin-top: 190px;
 }
 
 #topoSite .flex{
@@ -159,11 +210,11 @@ header .logo img{
     }
 }
 
-/*Estilo especialidades*/
+/*Estilo conquistas*/
 
 #especialidades{
     padding: 9% 0;
-    margin: 1% 0;
+    margin: 2% 0;
   
 }
 
@@ -272,18 +323,6 @@ header .logo img{
     color:aliceblue;
 }
 
-#numeros h2{
-    margin-top: 40px;
-    text-align: center;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 50px;
-}
-
-#numeros h2 span{
-    color: #9d1220cb;
-}
-
 #numeros .textNumeros p{
     margin: 60px;
     text-align: justify;
@@ -299,4 +338,224 @@ header .logo img{
 .ListaNumeros li span{
     color: #9d1220cb;
     font-weight: 700;
+}
+
+/* Estilo rodapé */
+
+#rodapeContent {
+    width: 100%;
+    background-color: #5b0e16;
+    border-top: 1px solid #ffffff8c;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2% 6%;
+}
+
+
+#rodapeSocial p{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+#rodapeInput{
+    display: flex;
+    color: aliceblue;
+    font-weight: 500;
+    gap: 10px;
+    text-align: justify;
+    flex-direction: column;
+}
+
+#inputGroup{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 2px;
+    
+}
+
+#inputGroup input{
+    all: unset;
+    padding: 1%;
+    width: 100%;
+}
+
+#inputGroup button{
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    padding: 0% 4%;
+    height: 100%;
+    font-size: 15px;
+    border-radius: 0px 2px 2px 0px;
+    cursor: pointer;
+    
+}
+
+#rodapeSocial .rodapeBtn{
+    display: flex;
+    gap: 10px;
+    padding: 4% 0%;
+    justify-content:baseline;
+}
+
+#rodapeSocial .rodapeBtn button{
+    all: unset;
+    color: aliceblue;
+    background-color: #5b0e16;
+    font-size: 30px;
+}
+
+#rodapeCopyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 100;
+    width: 100%;
+    padding: 3px;
+    font-size: small;
+}
+
+@media screen and (max-width: 768px){
+    
+    header .interface .mobile{
+        flex-direction: row;
+        padding:2%;
+        z-index: 100;
+    }
+
+    #hamburger{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 100px;
+        background: rgb(18, 15, 15);
+        z-index: 101;
+        border-left: 1px solid #ffffff8c;
+    }
+
+    #myLinksMob{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 150px;
+        padding: 20%;
+        list-style: none;
+        
+    }
+
+    #myLinksMob a{
+        color: #5b0e16;
+        font-weight: 700;
+        text-decoration: none;
+        transition: .2s;
+    }
+
+
+    #myLinksMob a:hover{
+        color: rgb(205, 184, 184);
+    }
+
+    header .mobile{
+        display: block;
+    }
+
+    #topoSite {
+        margin-top: 100px;
+    }
+
+    #topoSite .flex{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    h2.title{
+        margin-top: 5%;
+    }
+
+    #especialidades .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    #sobre .flex{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    #numeros .flex{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    #numeros .textNumeros .ListaNumeros{
+        padding: 0% 13%;
+    }
+
+    #rodapeContent{
+        gap: 10%
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+    .botaoCont {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 426px){
+
+    header .interface{
+        flex-direction: column;
+    }
+
+    #topoSite .imgTopoSite img{
+        width: 370px;
+        height: 340px;
+    }
+
+    #especialidades .flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    h2.title{
+        padding: 5%;
+        text-wrap: wrap;
+        margin-top: 5%;
+    }
+
+    #sobre .imgSobre img{
+        width: 300px;
+        height: 400px;
+        margin: 0;
+        border-radius: 2%;
+    }
+
+    #numeros .textNumeros p{
+        padding: 5%;
+        margin: 1%;
+    }
+
+    #numeros .textNumeros .ListaNumeros{
+       margin-top: 5%;
+    }
+
+    #rodapeContent{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10%
+    }
+
 }
