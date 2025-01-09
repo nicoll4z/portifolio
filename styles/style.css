@@ -518,7 +518,7 @@ header.rolagem a img:hover{
         flex-direction: column;
     }
 
-    header .interface .mobile{
+    header .mobile{
         flex-direction: row;
         padding:2%;
         z-index: 100;
