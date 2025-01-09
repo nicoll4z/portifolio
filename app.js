@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 window.addEventListener("scroll", function(){
     let header = document.querySelector('#header')
@@ -19,9 +18,3 @@ function myFunction() {
       x.style.display = "block";
     }
   }
-=======
-window.addEventListener("scroll", function(){
-    let header = document.querySelector('#header')
-    header.classList.toggle('rolagem',window.scrollY > 150)
-});
->>>>>>> eb6a10955019087ef9b764e75e79674db9125f1a

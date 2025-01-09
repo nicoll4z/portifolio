@@ -129,7 +129,6 @@ header.rolagem a{
     transition: .2s;
 }
 
-<<<<<<< HEAD
 #hamburger.rolagem {
     top: 75px;
     border-left: 1px solid #ffffff8c;
@@ -145,8 +144,6 @@ header.rolagem a{
     color: rgb(205, 184, 184);
 }
 
-=======
->>>>>>> eb6a10955019087ef9b764e75e79674db9125f1a
 header.rolagem a:hover{
     color: #9d1220f8;
 }
@@ -420,7 +417,6 @@ header.rolagem a img:hover{
     padding: 3px;
     font-size: small;
 }
-<<<<<<< HEAD
 
 @media screen and (max-width: 768px){
     
@@ -466,24 +462,6 @@ header.rolagem a img:hover{
 
     header .mobile{
         display: block;
-=======
-    
-
-@media screen and (max-width: 768px){
-
-    header nav{
-        display: none;
-    }
-
-    header{
-        display: flex;
-        justify-content: center;
-        height: 80px;
-    }
-
-    header .botaoCont{
-        display: none;
->>>>>>> eb6a10955019087ef9b764e75e79674db9125f1a
     }
 
     #topoSite {
@@ -524,7 +502,6 @@ header.rolagem a img:hover{
     #rodapeContent{
         gap: 10%
     }
-<<<<<<< HEAD
 
     .menu-desktop{
         display: none;
@@ -532,20 +509,15 @@ header.rolagem a img:hover{
     .botaoCont {
         display: none;
     }
-=======
->>>>>>> eb6a10955019087ef9b764e75e79674db9125f1a
 }
 
 
 @media screen and (max-width: 426px){
 
-<<<<<<< HEAD
     header .interface{
         flex-direction: column;
     }
 
-=======
->>>>>>> eb6a10955019087ef9b764e75e79674db9125f1a
     #topoSite .imgTopoSite img{
         width: 370px;
         height: 340px;
@@ -583,11 +555,7 @@ header.rolagem a img:hover{
 
     #rodapeContent{
         grid-template-columns: repeat(1, 1fr);
-<<<<<<< HEAD
         padding: 10%
-=======
-        padding: 5%
->>>>>>> eb6a10955019087ef9b764e75e79674db9125f1a
     }
 
 }
