@@ -420,9 +420,13 @@ header.rolagem a img:hover{
 
 @media screen and (max-width: 768px){
     
+    .hamburger i{    
+        font-size: 30px;
+    }
+
     header .interface .mobile{
         flex-direction: row;
-        padding:2%;
+        padding:5%;
         z-index: 100;
     }
 
