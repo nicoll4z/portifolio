@@ -515,7 +515,13 @@ header.rolagem a img:hover{
 @media screen and (max-width: 426px){
 
     header .interface{
+        flex-direction: column;
+    }
+
+    header .interface .mobile{
         flex-direction: row;
+        padding:2%;
+        z-index: 100;
     }
 
     #topoSite .imgTopoSite img{
